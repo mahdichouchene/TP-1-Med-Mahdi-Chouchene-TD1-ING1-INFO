@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Information</title>
+</head>
+<body>
+<h1>Enter your information</h1>
+<form action="Controller" method="post">
+    <p>
+        <label for="firstName">First name</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </p>
+    <p>
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" name="lastName" required>
+    </p>
+    <p>
+        <label for="birthDay">Date of birth</label>
+        <input type="date" id="birthDay" name="birthDay" required>
+    </p>
+    <p>
+        <label for="sex">Sex</label>
+        <select id="sex" name="sex" required>
+            <option value="">Select</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Other">Other</option>
+        </select>
+    </p>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
